@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   namespace :admins_office do
     get 'welcome/index'
   end
@@ -7,5 +8,6 @@ Rails.application.routes.draw do
   end
   devise_for :users
   devise_for :admins
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  root to: 'welcome#index'
 end
