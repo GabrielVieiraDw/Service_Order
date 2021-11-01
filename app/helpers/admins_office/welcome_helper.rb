@@ -1,0 +1,2 @@
+module AdminsOffice::WelcomeHelper
+end
