@@ -1,2 +1,0 @@
-module UsersOffice::WelcomeHelper
-end
