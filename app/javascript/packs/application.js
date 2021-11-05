@@ -5,3 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+$(document).ready(function(){
+  $('#birth-date').mask('00/00/0000');
+  $('#phone-number').mask('0000-0000');
+ })

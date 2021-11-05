@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   
   devise_for :users
   root to: 'welcome#index'
-  resources :car
-  resources :equipment
-  resources :service
-  resources :workorder
+  resources :cars
+  resources :equipments
+  resources :services
+  resources :workorders
+  resources :customers
 end

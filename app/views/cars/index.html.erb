@@ -1,0 +1,43 @@
+<% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+            <%= value %>
+      </div>
+<% end %>
+<main>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Cars list</h1>
+      <p class="lead text-muted">Here you will be able to manage all your cars.</p>
+      <p>
+      <%= link_to 'New', new_car_path, class:"btn btn-primary my-2" %>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <% @car.each do |car| %>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text"><%= car.plate_number %></p>
+              <p class="card-text"><%= car.maker %></p>
+              <p class="card-text"><%= car.model %></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <%= link_to 'Edit infomations', edit_car_path(car), class:"btn btn-sm btn-primary" %>
+                  <%= button_to 'Delete', car_path(id: car.id), method: :delete, class:"btn btn-sm btn-danger" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</main>

@@ -33,46 +33,55 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i>
-              </div>
-                <h3>Car Register</h3>
+                <%= link_to cars_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi bi-truck-flatbed m-auto text-primary"></i>
+                <% end %>
+                <h3>Cars</h3>
                 <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <%= link_to new_user_registration_path, class:"features-icons-icon d-flex" do %>
-                <i class="bi-layers m-auto text-primary"></i>
+                <%= link_to equipments_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi bi-tools m-auto text-primary"></i>
                 <% end %>
-                <h3>Equipment register</h3>
+                <h3>Equipments</h3>
                 <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                <h3>Service Register</h3>
+                <%= link_to services_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi-terminal m-auto text-primary"></i>
+                <% end %>
+                <h3>Services</h3>
                 <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                <%= link_to workorders_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi bi-cart m-auto text-primary"></i>
+                <% end %>
                 <h3>Open Service order</h3>
                 <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                <%= link_to edit_user_registration_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi bi-person-badge m-auto text-primary"></i>
+                <% end %>
                 <h3>User Profile</h3>
                 <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                <h3>Clients</h3>
+                <%= link_to customers_path, class:"features-icons-icon d-flex" do %>
+                  <i class="bi bi-people-fill m-auto text-primary"></i>
+                <% end %>
+                <h3>Customers</h3>
                 <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
             </div>
           </div>
